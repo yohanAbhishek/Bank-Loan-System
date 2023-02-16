@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="552.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loanSystem.Controllers.CustomerController">
+   <ImageView fitHeight="555.0" fitWidth="803.0" layoutX="-2.0" layoutY="-1.0" opacity="0.79">
+      <Image url="@../Assets/pexels-luis-ruiz-991422.jpg" />
+   </ImageView>
+   <BorderPane fx:id="loanSysBorderPane" layoutX="10.0" layoutY="10.0" prefHeight="530.0" prefWidth="800.0">
+      <bottom>
+         <HBox alignment="CENTER" prefHeight="54.0" prefWidth="800.0">
+            <BorderPane.margin>
+               <Insets />
+            </BorderPane.margin>
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleNewApplicationButton" prefHeight="50.0" prefWidth="234.0" style="-fx-background-color: black;" text="NEW" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleConfirmButton" prefHeight="50.0" prefWidth="234.0" style="-fx-background-color: black;" text="CONFIRM" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button alignment="CENTER" contentDisplay="CENTER" onAction="#handleApproveButton" prefHeight="50.0" prefWidth="234.0" style="-fx-background-color: black;" text="APPROVE" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </HBox>
+      </bottom>
+      <left>
+         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      </left>
+      <right>
+         <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+      </right>
+      <top>
+         <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Pane prefHeight="54.0" prefWidth="780.0" style="-fx-background-color: black;">
+               <HBox.margin>
+                  <Insets bottom="20.0" />
+               </HBox.margin>
+               <Label fx:id="headerLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="8.0" prefHeight="64.0" prefWidth="752.0" textFill="WHITE">
+                  <font>
+                     <Font name="Arial Bold Italic" size="30.0" />
+                  </font>
+               </Label>
+            </Pane>
+         </HBox>
+      </top>
+      <center>
+         <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-position: center;" BorderPane.alignment="CENTER" />
+      </center>
+   </BorderPane>
+</AnchorPane>
